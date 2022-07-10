@@ -1,3 +1,5 @@
+/* CSS RESET */
+
 /* Box sizing rules */
 *,
 *::before,
@@ -37,3 +39,115 @@ picture {
   max-width: 100%;
   display: block;
 }
+
+
+/* -------------------------------------------------------------------------------------------------------*/
+
+/* Setting custom properties */
+
+
+:root{
+    --ff-primary: "Gtek Technology", serif;
+
+    --ff-body: var(--ff-primary);
+    --ff-heading: var(--ff-primary);
+
+}
+
+
+/* -------------------------------------------------------------------------------------------------------*/
+
+
+/* Code */
+
+.navbar{
+    background: rgb(225,224,224);
+    background: linear-gradient(90deg, rgba(225,224,224,1) 7%, rgba(128,128,128,1) 77%, rgba(78,78,78,1) 100%);
+    border-bottom: 5px solid #808080;
+    border-right: 5px solid #808080;
+    border-left: 5px solid #e1e0e0;
+    border-top: 5px solid #e1e0e0;
+    box-shadow: 4px 4px 0 2px;
+    margin: 5px;
+   
+    
+}
+
+.nav__item{
+    padding: .2rem 0.5rem 0rem 0.5rem;
+    font-family: var(--ff-primary);
+    font-size: .9rem;
+    margin: 0.5rem 0rem;
+    
+}
+
+.nav__item a {
+  align-items: center;
+}
+
+
+.nav__item:hover{
+  box-shadow: 0 0 5px 0 #7b7b7b;
+}
+
+
+@media screen and (min-width: 800px){
+
+    .navbar{
+        background: rgb(78,78,78);
+      background: linear-gradient(90deg, rgba(78,78,78,1) 2%, rgba(128,128,128,1) 61%, rgba(225,224,224,1) 100%);
+    }
+
+    .nav__list{
+        display: flex;
+        width: auto;
+        justify-content: flex-end;
+        padding: .5rem;
+
+        
+    }
+
+ 
+    
+}
+
+
+
+.main{
+  background-color: #007D7F;
+  width: 100%;
+  height: 100vh;
+}
+
+.box-upper{
+  background-color: #07037E;
+  height: 15%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: #ffffff;
+  font-size: 20px;
+
+
+
+
+}
+.box{
+  background-color: #BBBCBB;
+  padding: 4rem 7rem 3rem;
+  display: inline-block;
+  color: #474431;
+  font-weight: bold;
+  border-top: 2px solid white;
+  border-right: 2px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid white;
+  box-shadow: 0 0 5px 0 black;
+  position: relative;
+  margin: 10px;
+  
+
+}
+
+
