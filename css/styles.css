@@ -135,6 +135,9 @@ picture {
 }
 
 
+/*----------------------------------------------------------------------------------------------------------*/
+/*BOX*/
+
 .box{
   background-color: var(--clr-primary);
   padding: 4rem 4rem 3rem;
@@ -161,13 +164,12 @@ picture {
   color: #ffffff;
   font-family: var(--ff-heading);
 
-
-  }
+}
 
 
 
 .box-upper-content{
-  margin-left: .5rem;
+  margin-left: 1rem;
   display: inline-block;
 
 }
@@ -197,6 +199,10 @@ picture {
   border-left: .5px solid white;
   box-shadow: 0 0 2px 0 black;
 }
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*BUTTONS*/
 
 
 
@@ -252,14 +258,5 @@ picture {
     
   
   }
-
-
-
-
-
-
-
-
-
 
 }
