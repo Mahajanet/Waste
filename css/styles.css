@@ -19,6 +19,15 @@ ol[role='list'] {
   list-style: none;
 }
 
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+li{
+  cursor: pointer;
+}
+
 
 html{
   font-size: 62.5%;
@@ -98,7 +107,7 @@ picture {
 
 
 ::selection{
-  background-color: #FFFEDD;
+  background-color: #fffedd72;
 }
 
 
@@ -160,7 +169,7 @@ picture {
 }
 
 .main{
-  background: url(../images/flat-mountains.svg);
+  background: url(../images/waarmmountains.svg);
   background-position: center;
   font-family: var(--ff-body);
   background-repeat: no-repeat;
@@ -467,7 +476,7 @@ picture {
 .about{
   width: 100vw;
   height: 300px;
-  background-color: #FFFEDD;
+  background-color: #fffedd72;
   position: relative;
   overflow: hidden;
 }
@@ -519,7 +528,7 @@ picture {
   }
   80% {
     font-family: 'Pac Font', serif;
-    color: #7a5bab;
+    color: #955E5A;
     font-size: 4rem;
 
   }
@@ -610,7 +619,7 @@ picture {
 
 .contact{
   width: 100vw;
-  background-image: url(../images/views.jpeg);
+  background-image: url(../images/warm.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 5rem 0rem;
