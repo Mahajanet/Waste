@@ -107,8 +107,46 @@ picture {
 
 
 ::selection{
-  background-color: #fffedd72;
+  background-color: #F2F2D1;
 }
+
+
+
+.border-bordershadow{
+  border-top: 2px solid white;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid white;
+  box-shadow: 0 0 5px 0 black;
+}
+
+.border-bordershadow-minimzied{
+  border-top: .5px solid white;
+  border-right: .5px solid black;
+  border-bottom: .5px solid black;
+  border-left: .5px solid white;
+  box-shadow: 0 0 2px 0 black;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+h3{
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
 
 
 /* -------------------------------------------------------------------------------------------------------*/
@@ -168,169 +206,31 @@ picture {
     
 }
 
+/* -------------------------------------------------------------------------------------------------------*/
+
+
 .main{
   background: url(../images/waarmmountains.svg);
   background-position: center;
   font-family: var(--ff-body);
   background-repeat: no-repeat;
   background-size: cover;
-  width: auto;
-  height: 100vh;
-
+  max-width: 100%;
+  margin-inline: auto;
+  padding: 4rem;
 }
-
-
-
-
-
-
 
 
 /*---------------------------------------------------------------------------------------------------------*/
 
-.hero{
-  display: grid;
-  overflow: hidden;
-  max-width: auto;
-  max-height: 93%;
-  grid-template: 60% 40%/ 30% 40% 20%;
-  grid-template-areas: "one one two" "three four two";
-  column-gap: 8rem;
-  row-gap: 5rem;
-  padding:5rem 5rem 3rem 5rem;
-
-
-  
-
-  
-
-}
-
-
-@media screen and (max-width: 480px){
-
-  .hero{
-    grid-template: 200px 100pxfr / 200px 100px 100px;
-  }
-
-}
-
-@media screen and (min-width: 481px) and (min-width:980px){
-
-  .hero{
-    grid-template: 250px 150pxfr / 300px 150px 150px;
-  }
-
-}
-
-
-
-
-
-
-.square{
-  background-color: white;
-}
-
-.one{
-  grid-area: one;
-}
-
-.two{
-  grid-area: two;
-}
-.three{
-  grid-area: three;
-}
-
-.four{
-  grid-area: four;
-}
-
-
-
-/*----------------------------------------------------------------------------------------------------------*/
-/*BOX*/
-
-.box{
-  background-color: #DCDBDB;
-  padding: 4rem 3rem 3rem;
-  display: inline-block;
-  color: #000000;
-  font-weight: bold;
-  position: relative;
-  font-size: 1.5rem;
-  
- 
-
-
-  
-  
-
-}
-
-
-.box-upper{
-  background-color: var(--clr-accent);
-  height: 2.2rem;
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  color: #ffffff;
-  font-family: var(--ff-heading);
-
-}
-
-
-
-.box-upper-content{
-  margin-left: 1rem;
-  display: inline-block;
-
-}
-
-
-
-
-.wrapper{
-  display: flex;
-  justify-content: end;
-  top: 3px;
-  right: 0;
-  position: absolute;
-}
-
-
-
-.border-bordershadow{
-  border-top: 2px solid white;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-  border-left: 2px solid white;
-  box-shadow: 0 0 5px 0 black;
-}
-
-.border-bordershadow-minimzied{
-  border-top: .5px solid white;
-  border-right: .5px solid black;
-  border-bottom: .5px solid black;
-  border-left: .5px solid white;
-  box-shadow: 0 0 2px 0 black;
-}
-
-
-/* -------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*BUTTONS*/
-
-
-
+  
+  
+  
 .btn{
   letter-spacing: 1px;
-  
-  
+  max-height: 100%;
 }
-
 
 .btn-primary{
   background-color: var(--clr-primary);
@@ -342,22 +242,15 @@ picture {
   box-shadow: none;
 }
 
-
-
 .btn-icon{
   background-color: var(--clr-primary);
   line-height: 0;
   margin: 0 5px 0 5px;
- 
-  
 }
-
 
 .btn-icon:hover{
   border-width: 1.5px;
-  
 }
-
 
 .icon{
   width: 10px;
@@ -365,95 +258,156 @@ picture {
 }
 
 
-@media screen and (max-width: 480px){
-  
 
 
 
-  .box{
- 
-    padding: 1rem 2rem 3rem;
-    font-size: 1rem;
-    
-  
-  }
 
 
-  .btn{
-    letter-spacing: .5;
-  }
-
-  .btn-primary{
-    padding: .25rem 1rem;;
-  }
 
 
-  .btn-primary:hover{
-    border: 1px solid black;
-   
-  }
-  
-  
-  
-  .btn-icon{
-    background-color: var(--clr-primary);
-    line-height: 0;
-    margin: 0 2.5px 0 2.5px;
-   
-    
-  }
-  
-  
-  .btn-icon:hover{
-    border-width: 1.1px;
-    
-  }
-  
-  
-  .icon{
-    width: 7px;
-    margin: 1px;
-  }
 
 
+/*---------------------------------------------------------------------------------------------------------*/
+
+/*POST*/
+
+.stacked{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.post__content{
+  margin: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post__title{
+  font-family: 'Noto Sans Mono', monospace;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
 }
 
 
 
-
-
-.box-image{
-  width: 100%;
-  height: auto;
-  margin: 1rem;
-  border-radius: 3px;
-
+.post__author, .post__time{
+  font-weight: bold;
+  font-style: italic;
 }
 
-
-
-.box-text{
-  text-align: left;
-  letter-spacing: 0.02rem;
+.post__text{
+  margin-top: 1rem;
 }
 
-
-
-.box-text::after{
+.post__text::first-letter{
+  font-size: large;
+  font-weight: bold;
+}
+.post__text::after{
   content: "...";
 }
 
-.box-content .btn{
-  margin: 2rem 1rem;
+
+.post__footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+
+.post{
+  background-color: #DCDBDB;
+  font-family: 'Type Machine', monospace;
+  padding: 3rem;
+  color: #000000;
+  position: relative;
+  font-size: 1.5rem;
+  aspect-ratio: 1/0.5;
+}
+
+
+.post__header{
+  background-color: var(--clr-accent);
+  height: 2.2rem;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: #ffffff;
+  font-family: var(--ff-heading);
+}
+
+.post__header__content{
+  margin-left: 1rem;
+}
+
+
+.wrapper{
+  display: flex;
+  justify-content: end;
+  top: 3px;
+  right: 0;
+  position: absolute;
+}
+
+
+.post__img{
+  width: 70%;
+  aspect-ratio: 1.5/1;
+  object-fit: cover;
 }
 
 
 
-.box-imageonly{
-  max-width: 100%;
-  max-height: 100%;
-  margin: 0;
+/*HERO*/
+
+.hero{
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+
+
+
+@media screen and (min-width:1000px){
+
+.post.featured{
+    grid-row: span 2;
+    grid-column: span 2;
+}
   
+  
+.featured .post__img{
+  aspect-ratio: 1/.5;
+  
+  }
+    
+  
+
+}
+
+@media screen and (min-width:905px) and (max-width:1500px){
+
+.focused{
+
+  display: none;
+}
+
+
+.third{
+
+  grid-row: 2/-2;
+  grid-column: 1/2;
+}
+
+
 }
 
 
@@ -471,12 +425,21 @@ picture {
 
 
 
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------*/
 
 
 .about{
   width: 100vw;
   height: 300px;
-  background-color: #fffedd72;
+  background-color: #DCDBDB;
   position: relative;
   overflow: hidden;
 }
@@ -510,25 +473,25 @@ picture {
   }
   20% {
     font-family: 'Arcade', serif;
-    color: #494784;
+    color: #252525;
     font-size: 4rem;
 
   }
   40% {
     font-family: 'Underground', 'sans serif';
-    color: #454545;
+    color: #838383;
     font-size: 2rem;
 
   }
   60% {
     font-family: 'Monton', monospace;
-    color: #07037E;
+    color: #878787;
     font-size: 5rem;
     
   }
   80% {
     font-family: 'Pac Font', serif;
-    color: #955E5A;
+    color: #4d4d4d;
     font-size: 4rem;
 
   }
@@ -553,10 +516,14 @@ picture {
 }
 
 
+
+
+
+
 @media screen and (max-width:480px){
 
   .about{
-    height: 200px;
+    height: 400px;
   }
 
 
@@ -578,25 +545,25 @@ picture {
     }
     20% {
       font-family: 'Arcade', serif;
-      color: #8B2467;
+      color: #252525;
       font-size: 3rem;
     }
 
     40% {
       font-family: 'Underground', 'sans serif';
-      color: #d22805;
+      color: #838383;
       font-size: 2rem;
     }
 
     60% {
       font-family: 'Monton', monospace;
-      color: #ffffff;
+      color: #878787;;
       font-size: 4rem;
     }
 
     80% {
       font-family: 'Pac Font', serif;
-      color:#9F0FB4;
+      color: #4d4d4d;
       font-size: 3rem;
     }
 
@@ -608,12 +575,22 @@ picture {
 }
 
 
-@media screen and (min-width: 540p) and (max-width:840px) {
+@media screen and (min-width: 481px) and (max-width:768px) {
   .about{
-    height: 250px;
+    height: 440px;
   }
 
 }
+
+@media screen and (min-width: 769px) and (max-width:1240px) {
+  .about{
+    height: 380px;
+  }
+
+}
+
+
+/*---------------------------------------------------------------------------------------------------------*/
 
 
 
@@ -622,28 +599,38 @@ picture {
   background-image: url(../images/warm.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 5rem 0rem;
   position: relative;
-  height: 700px;
-  
+  height: 800px;
+}
+
+.contact-header{
+  display:flex;
+  justify-content: center;
+}
 
 
-  
+.contact-heading{
+  font-family: var(--ff-heading);
+  color: #DCDBDB;
+  margin-top: 4rem;
   
 }
 
-.form-container{
 
-  border-radius: 10px;
+
+
+
+.form-container{
   padding: 3rem;
   font-family: var(--ff-body);
   font-size: 2rem;
   color: #07037E;
   position: absolute;
-  top: 50%;  /* position the top  edge of the element at the middle of the parent */
+  top:55%;  /* position the top  edge of the element at the middle of the parent */
   left: 50%; /* position the left edge of the element at the middle of the parent */
   transform: translate(-50%, -50%);
   background-color: #DCDBDB;
+  margin-bottom: 2rem;
 
 }
 
@@ -680,18 +667,53 @@ label{
  
 }
 
+@media screen and (max-width: 300px){
+
+  h1{
+    font-size: 2rem;
+  }
+
+  .contact-heading{
+    margin-top: 1rem;
+    
+  }
+  
+}
+
+
+@media screen and (min-width:301px) and (max-width: 370px){
+
+  h1{
+  font-size: 2.5rem;
+}
+
+
+.contact-heading{
+  margin-top: 1rem;
+  
+}
+
+}
+
 
 @media screen and (max-width:480px){
 
+
   .contact{
-    height: 400px;
+    height: 470px;
   }
 
 
   .form-container{
     padding: 1.5rem;
     font-size: 1rem;
+    top: 55%;
   
+  }
+
+  .contact-heading{
+    margin-top: 1rem;
+    
   }
   
   
@@ -710,15 +732,33 @@ label{
     margin-bottom: 2rem;
   }
 
+}
 
 
+.footer{
+
+  background-color: #000000;
+  width: auto;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 
+}
+
+.footer-text{
+  color: #DCDBDB;
+  font-size: 2rem;
+  font-family: var(--ff-body);
+
+}
+
+@media screen and (max-width:280px){
 
 
-
-
-
-
+   .footer-text{
+    font-size: 1rem;
+   }
 
 }
