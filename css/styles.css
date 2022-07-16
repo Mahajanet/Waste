@@ -1,4 +1,5 @@
-/* CSS RESET */
+/* CSS reset */
+
 
 /* Box sizing rules */
 *,
@@ -19,6 +20,7 @@ ol[role='list'] {
   list-style: none;
 }
 
+/* Removing styles from links */
 a{
   text-decoration: none;
   color: inherit;
@@ -27,7 +29,6 @@ a{
 li{
   cursor: pointer;
 }
-
 
 html{
   font-size: 62.5%;
@@ -47,8 +48,6 @@ body {
     
   }
   
-
-  
 /* Make images easier to work with */
 img,
 picture {
@@ -57,11 +56,9 @@ picture {
 }
 
 
-/* -------------------------------------------------------------------------------------------------------*/
-
 /* Setting custom properties */
 
-
+/* Web unsafe fonts */
 @font-face{
   font-family: "Type Machine";
   src: url(../fonts/Type\ Machine.ttf);
@@ -71,7 +68,6 @@ picture {
   font-family: "Monton";
   src: url(../fonts/Monoton-Regular.ttf);
 }
-
 
 @font-face{
   font-family: "Pac Font";
@@ -93,39 +89,37 @@ picture {
   src: url(../fonts/GtekTechnology-B9aB.ttf);
 }
 
-
 :root{
     --ff-primary: "Gtek Technology", serif;
     --ff-text: "Type Machine", monospace;
 
     --ff-body: var(--ff-text);
     --ff-heading: var(--ff-primary);
+
     --clr-primary: #BBBCBB;
     --clr-accent: #07037E;
-
+    --clr-light: #ffffff;
+    --clr-dark: #000000;
 }
-
 
 ::selection{
   background-color: #F2F2D1;
 }
 
-
-
 .border-bordershadow{
-  border-top: 2px solid white;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-  border-left: 2px solid white;
-  box-shadow: 0 0 5px 0 black;
+  border-top: 2px solid var(--clr-light);
+  border-right: 2px solid var(--clr-dark);
+  border-bottom: 2px solid var(--clr-dark);
+  border-left: 2px solid var(--clr-light);
+  box-shadow: 0 0 5px 0 var(--clr-dark);
 }
 
 .border-bordershadow-minimzied{
-  border-top: .5px solid white;
-  border-right: .5px solid black;
-  border-bottom: .5px solid black;
-  border-left: .5px solid white;
-  box-shadow: 0 0 2px 0 black;
+  border-top: .5px solid var(--clr-light);
+  border-right: .5px solid var(--clr-dark);
+  border-bottom: .5px solid var(--clr-dark);
+  border-left: .5px solid var(--clr-light);
+  box-shadow: 0 0 2px 0 var(--clr-dark);
 }
 
 h1{
@@ -141,39 +135,25 @@ h3{
 }
 
 
+/* Navabar */
 
-
-
-
-
-
-
-
-/* -------------------------------------------------------------------------------------------------------*/
-
-
-/* Code */
 
 .navbar{
     background: rgb(225,224,224);
     background: linear-gradient(90deg, rgba(225,224,224,1) 7%, rgba(128,128,128,1) 77%, rgba(78,78,78,1) 100%);
-    border-bottom: 5px solid #808080;
-    border-right: 5px solid #808080;
-    border-left: 5px solid #e1e0e0;
-    border-top: 5px solid #e1e0e0;
-    box-shadow: 4px 4px 0 2px;
     margin: 5px;
-   
-    
+    border-top: 5px solid #e1e0e0;
+    border-right: 5px solid #808080;
+    border-bottom: 5px solid #808080;
+    border-left: 5px solid #e1e0e0;
+    box-shadow: 4px 4px 0 2px;
 }
 
 .nav__item{
-    padding: .2rem 0.5rem 0rem .5rem;
+    padding: .2rem .5rem 0rem;
     font-family: var(--ff-primary);
     font-size: 1.3rem;
     margin: 0.5rem 1.5rem;
- 
-    
 }
 
 .nav__item a {
@@ -198,33 +178,26 @@ h3{
         width: auto;
         justify-content: flex-end;
         padding: .5rem;
-
-        
     }
-
- 
-    
 }
 
-/* -------------------------------------------------------------------------------------------------------*/
+
+/* Main */
 
 
 .main{
   background: url(../images/waarmmountains.svg);
   background-position: center;
-  font-family: var(--ff-body);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
   margin-inline: auto;
   padding: 4rem;
+  font-family: var(--ff-body);
 }
 
 
-/*---------------------------------------------------------------------------------------------------------*/
-
-/*BUTTONS*/
-  
+/*Buttons*/
   
   
 .btn{
@@ -238,7 +211,7 @@ h3{
 }
 
 .btn-primary:hover{
-  border: 2px solid black;
+  border: 2px solid var(--clr-dark);
   box-shadow: none;
 }
 
@@ -252,24 +225,53 @@ h3{
   border-width: 1.5px;
 }
 
+
+/* Icons */
+
+
 .icon{
   width: 10px;
   margin: 2px;
 }
 
 
+/* Hero */
 
 
+.hero{
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
 
 
+/*Post*/
 
 
+.post{
+  background-color: #DCDBDB;
+  font-family: 'Type Machine', monospace;
+  padding: 3rem;
+  color: #000000;
+  position: relative;
+  font-size: 1.5rem;
+  aspect-ratio: 1/0.5;
+}
 
+.post__header{
+  background-color: var(--clr-accent);
+  height: 2.2rem;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: #ffffff;
+  font-family: var(--ff-heading);
+}
 
-
-/*---------------------------------------------------------------------------------------------------------*/
-
-/*POST*/
+.post__header__content{
+  margin-left: 1rem;
+}
 
 .stacked{
   display: flex;
@@ -277,7 +279,6 @@ h3{
   justify-content: center;
   align-items: center;
 }
-
 
 .post__content{
   margin: .5rem;
@@ -292,8 +293,6 @@ h3{
   margin-top: 1rem;
   margin-bottom: .5rem;
 }
-
-
 
 .post__author, .post__time{
   font-weight: bold;
@@ -312,7 +311,6 @@ h3{
   content: "...";
 }
 
-
 .post__footer{
   display: flex;
   align-items: center;
@@ -320,33 +318,11 @@ h3{
   margin-top: 1rem;
 }
 
-
-.post{
-  background-color: #DCDBDB;
-  font-family: 'Type Machine', monospace;
-  padding: 3rem;
-  color: #000000;
-  position: relative;
-  font-size: 1.5rem;
-  aspect-ratio: 1/0.5;
+.post__img{
+  width: 70%;
+  aspect-ratio: 1.5/1;
+  object-fit: cover;
 }
-
-
-.post__header{
-  background-color: var(--clr-accent);
-  height: 2.2rem;
-  width: 100%;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  color: #ffffff;
-  font-family: var(--ff-heading);
-}
-
-.post__header__content{
-  margin-left: 1rem;
-}
-
 
 .wrapper{
   display: flex;
@@ -357,83 +333,34 @@ h3{
 }
 
 
-.post__img{
-  width: 70%;
-  aspect-ratio: 1.5/1;
-  object-fit: cover;
-}
-
-
-
-/*HERO*/
-
-.hero{
-  display: grid;
-  grid-gap: 3rem;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-}
-
-
-
-
 @media screen and (min-width:1000px){
 
-.post.featured{
+  .post.featured{
     grid-row: span 2;
     grid-column: span 2;
-}
-  
-  
-.featured .post__img{
-  aspect-ratio: 1/.5;
-  
   }
-    
   
-
+  
+  .featured .post__img{
+    aspect-ratio: 1/.5;
+  }
 }
 
 @media screen and (min-width:905px) and (max-width:1500px){
 
-.focused{
+  .focused{
+    display: none;
+  }
 
-  display: none;
-}
 
-
-.third{
-
+  .third{
   grid-row: 2/-2;
   grid-column: 1/2;
+  }
 }
 
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*---------------------------------------------------------------------------------------------------------*/
+/* About section */
 
 
 .about{
@@ -444,12 +371,10 @@ h3{
   overflow: hidden;
 }
 
-
 .heading{
   text-align: center;
   
 }
-
 
 .about .heading{
   margin: 0;
@@ -459,8 +384,17 @@ h3{
 
 }
 
+.about-content{
+  position: absolute;
+  top: 10rem;
+  font-family: 'Type Machine', monospace;
+  font-size: 1.8rem;
+  padding: 2rem;
+  max-width: auto;
+}
+
 .change-text {
-  color: black;
+  color: var(--clr-dark);
   animation-name: fontChange;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -469,55 +403,37 @@ h3{
 @keyframes fontChange {
   0% {
     font-family: 'Gtek Technology', monospace;
-
   }
+
   20% {
     font-family: 'Arcade', serif;
     color: #252525;
     font-size: 4rem;
-
   }
+
   40% {
     font-family: 'Underground', 'sans serif';
     color: #838383;
     font-size: 2rem;
-
   }
+
   60% {
     font-family: 'Monton', monospace;
     color: #878787;
     font-size: 5rem;
-    
   }
+
   80% {
     font-family: 'Pac Font', serif;
     color: #4d4d4d;
     font-size: 4rem;
-
   }
+
   100% {
     font-family: 'Gtek technology', monospace;
     font-size: 3rem;
-   
-
   }
 }
-
-.about-content{
-  position: absolute;
-  top: 10rem;
-  font-family: 'Type Machine', monospace;
-  font-size: 1.8rem;
-  padding: 2rem;
-  max-width: auto;
-  
-  
-
-}
-
-
-
-
 
 
 @media screen and (max-width:480px){
@@ -526,23 +442,20 @@ h3{
     height: 400px;
   }
 
-
   .about-content{
     top: 8rem;
-    font-size: 1.3rem;}
-
-
+    font-size: 1.3rem;
+  }
 
   .about .heading{
     font-size: 2rem;
   }
 
-
   @keyframes fontChange {
     0% {
       font-family: 'Gtek Technology', monospace;
-  
     }
+
     20% {
       font-family: 'Arcade', serif;
       color: #252525;
@@ -579,19 +492,17 @@ h3{
   .about{
     height: 440px;
   }
-
 }
+
 
 @media screen and (min-width: 769px) and (max-width:1240px) {
   .about{
     height: 380px;
   }
-
 }
 
 
-/*---------------------------------------------------------------------------------------------------------*/
-
+/* Contact me section */
 
 
 .contact{
@@ -608,17 +519,12 @@ h3{
   justify-content: center;
 }
 
-
 .contact-heading{
   font-family: var(--ff-heading);
   color: #DCDBDB;
   margin-top: 4rem;
   
 }
-
-
-
-
 
 .form-container{
   padding: 3rem;
@@ -634,6 +540,9 @@ h3{
 
 }
 
+.form-group{
+  margin-bottom: 3rem;
+}
 
 input{
   padding: 1rem;
@@ -646,6 +555,10 @@ input:focus, #textarea:focus{
   border-color: #07037E;
 }
 
+label{
+  display: block;
+}
+
 #textarea{
   resize: none;
   padding: 1rem;
@@ -653,19 +566,12 @@ input:focus, #textarea:focus{
   
 }
 
-label{
-  display: block;
-
-}
-.form-group{
-  margin-bottom: 3rem;
-}
-
 .button-container{
   display: flex;
   justify-content: space-between;
  
 }
+
 
 @media screen and (max-width: 300px){
 
@@ -677,7 +583,6 @@ label{
     margin-top: 1rem;
     
   }
-  
 }
 
 
@@ -685,80 +590,70 @@ label{
 
   h1{
   font-size: 2.5rem;
-}
+  }
 
 
-.contact-heading{
+  .contact-heading{
   margin-top: 1rem;
-  
-}
-
+  }
 }
 
 
 @media screen and (max-width:480px){
 
-
   .contact{
     height: 470px;
   }
-
 
   .form-container{
     padding: 1.5rem;
     font-size: 1rem;
     top: 55%;
-  
   }
 
   .contact-heading{
     margin-top: 1rem;
-    
-  }
-  
-  
-  input{
-    padding: 0.5rem;
-  
-  }
-  
-  
-  #textarea{
-    padding: 0.5rem;
-    
   }
   
   .form-group{
     margin-bottom: 2rem;
   }
 
+  input{
+    padding: 0.5rem;
+  }
+  
+  #textarea{
+    padding: 0.5rem;
+  }
 }
 
 
-.footer{
+/* Footer section */
 
+
+.footer{
   background-color: #000000;
   width: auto;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 }
 
 .footer-text{
   color: #DCDBDB;
   font-size: 2rem;
   font-family: var(--ff-body);
-
 }
+
 
 @media screen and (max-width:280px){
 
-
-   .footer-text{
+  .footer-text{
     font-size: 1rem;
-   }
-
+  }
 }
+
+
+/* End of code */
