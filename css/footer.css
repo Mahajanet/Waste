@@ -1,0 +1,25 @@
+/* Footer section */
+
+
+.footer{
+    background-color: #000000;
+    width: auto;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.footer-text{
+    color: #DCDBDB;
+    font-size: 2rem;
+    font-family: var(--ff-body);
+}
+  
+  
+@media screen and (max-width:280px){
+  
+    .footer-text{
+      font-size: 1rem;
+    }
+}

@@ -1,0 +1,138 @@
+/* About section */
+
+
+.about{
+width: 100vw;
+height: 300px;
+background-color: #DCDBDB;
+position: relative;
+overflow: hidden;
+}
+
+.heading{
+text-align: center;
+}
+
+.about .heading{
+margin: 0;
+font-family: var(--ff-heading);
+font-size: 3rem;
+padding: 4rem 3rem 3rem;
+}
+
+.about-content{
+position: absolute;
+top: 10rem;
+font-family: 'Type Machine', monospace;
+font-size: 1.8rem;
+padding: 2rem;
+width: auto;
+}
+
+.change-text {
+color: var(--clr-dark);
+animation-name: fontChange;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+
+@keyframes fontChange {
+0% {
+    font-family: 'Gtek Technology', monospace;
+}
+
+20% {
+    font-family: 'Arcade', serif;
+    color: #252525;
+    font-size: 4rem;
+}
+
+40% {
+    font-family: 'Underground', 'sans serif';
+    color: #838383;
+    font-size: 2rem;
+}
+
+60% {
+    font-family: 'Monton', monospace;
+    color: #878787;
+    font-size: 5rem;
+}
+
+80% {
+    font-family: 'Pac Font', serif;
+    color: #4d4d4d;
+    font-size: 4rem;
+}
+
+100% {
+    font-family: 'Gtek technology', monospace;
+    font-size: 3rem;
+}
+}
+
+
+@media screen and (max-width:480px){
+
+.about{
+    height: 400px;
+}
+
+.about-content{
+    top: 8rem;
+    font-size: 1.3rem;
+}
+
+.about .heading{
+    font-size: 2rem;
+}
+
+@keyframes fontChange {
+    0% {
+    font-family: 'Gtek Technology', monospace;
+    }
+
+    20% {
+    font-family: 'Arcade', serif;
+    color: #252525;
+    font-size: 3rem;
+    }
+
+    40% {
+    font-family: 'Underground', 'sans serif';
+    color: #838383;
+    font-size: 2rem;
+    }
+
+    60% {
+    font-family: 'Monton', monospace;
+    color: #878787;;
+    font-size: 4rem;
+    }
+
+    80% {
+    font-family: 'Pac Font', serif;
+    color: #4d4d4d;
+    font-size: 3rem;
+    }
+
+    100% {
+    font-family: 'Gtek technology', monospace;
+    font-size: 2rem;
+    }
+}
+}
+
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+.about{
+    height: 440px;
+}
+}
+
+
+@media screen and (min-width: 769px) and (max-width:1240px) {
+.about{
+    height: 380px;
+}
+}

@@ -1,0 +1,125 @@
+/* Contact me section */
+
+
+.contact{
+    width: 100vw;
+    background-image: url(../images/warm.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 800px;
+}
+  
+.contact-header{
+display:flex;
+justify-content: center;
+}
+
+.contact-heading{
+font-family: var(--ff-heading);
+color: #DCDBDB;
+margin-top: 4rem;
+
+}
+
+.form-container{
+padding: 3rem;
+font-family: var(--ff-body);
+font-size: 2rem;
+color: #07037E;
+position: absolute;
+top:55%;  /* position the top  edge of the element at the middle of the parent */
+left: 50%; /* position the left edge of the element at the middle of the parent */
+transform: translate(-50%, -50%);
+background-color: #DCDBDB;
+margin-bottom: 2rem;
+
+}
+
+.form-group{
+margin-bottom: 3rem;
+}
+
+input{
+padding: 1rem;
+transition: border-color 0.40s;
+
+}
+
+input:focus, #textarea:focus{
+outline: 0;
+border-color: #07037E;
+}
+
+label{
+display: block;
+}
+
+#textarea{
+resize: none;
+padding: 1rem;
+transition: border-color 0.40s;
+
+}
+
+.button-container{
+display: flex;
+justify-content: space-between;
+
+}
+
+
+@media screen and (max-width: 300px){
+
+h1{
+    font-size: 2rem;
+}
+
+.contact-heading{
+    margin-top: 1rem;
+    
+}
+}
+
+
+@media screen and (min-width:301px) and (max-width: 370px){
+
+h1{
+font-size: 2.5rem;
+}
+
+
+.contact-heading{
+margin-top: 1rem;
+}
+}
+
+
+@media screen and (max-width:480px){
+
+.contact{
+    height: 470px;
+}
+
+.form-container{
+    padding: 1.5rem;
+    font-size: 1rem;
+    top: 55%;
+}
+
+.contact-heading{
+    margin-top: 1rem;
+}
+
+.form-group{
+    margin-bottom: 2rem;
+}
+
+input{
+    padding: 0.5rem;
+}
+
+#textarea{
+    padding: 0.5rem;
+}
+}
