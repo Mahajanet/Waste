@@ -15,8 +15,7 @@
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul, ol{
   list-style: none;
 }
 
@@ -390,7 +389,7 @@ h3{
   font-family: 'Type Machine', monospace;
   font-size: 1.8rem;
   padding: 2rem;
-  max-width: auto;
+  width: auto;
 }
 
 .change-text {
