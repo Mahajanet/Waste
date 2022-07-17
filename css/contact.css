@@ -43,7 +43,6 @@ margin-bottom: 3rem;
 input{
 padding: 1rem;
 transition: border-color 0.40s;
-
 }
 
 input:focus, #textarea:focus{
@@ -59,67 +58,64 @@ display: block;
 resize: none;
 padding: 1rem;
 transition: border-color 0.40s;
-
 }
 
 .button-container{
 display: flex;
 justify-content: space-between;
-
 }
 
 
 @media screen and (max-width: 300px){
 
-h1{
+    h1{
     font-size: 2rem;
-}
+    }
 
-.contact-heading{
+    .contact-heading{
     margin-top: 1rem;
-    
-}
+    }
 }
 
 
 @media screen and (min-width:301px) and (max-width: 370px){
 
-h1{
-font-size: 2.5rem;
-}
+    h1{
+    font-size: 2.5rem;
+    }
 
 
-.contact-heading{
-margin-top: 1rem;
-}
+    .contact-heading{
+    margin-top: 1rem;
+    }
 }
 
 
 @media screen and (max-width:480px){
 
-.contact{
-    height: 470px;
-}
+    .contact{
+        height: 470px;
+    }
 
-.form-container{
-    padding: 1.5rem;
-    font-size: 1rem;
-    top: 55%;
-}
+    .form-container{
+        padding: 1.5rem;
+        font-size: 1rem;
+        top: 55%;
+    }
 
-.contact-heading{
-    margin-top: 1rem;
-}
+    .contact-heading{
+        margin-top: 1rem;
+    }
 
-.form-group{
-    margin-bottom: 2rem;
-}
+    .form-group{
+        margin-bottom: 2rem;
+    }
 
-input{
-    padding: 0.5rem;
-}
+    input{
+        padding: 0.5rem;
+    }
 
-#textarea{
-    padding: 0.5rem;
-}
+    #textarea{
+        padding: 0.5rem;
+    }
 }
