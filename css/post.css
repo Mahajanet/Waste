@@ -33,7 +33,6 @@
     margin-left: 1rem;
 }
 
-
 .post--post{
     background-color: var(--clr-primary);
     position: relative;
@@ -238,6 +237,7 @@ figcaption{
 
 }
 
+
 @media screen and (max-width:1072px){
 
     .post__text--post{
@@ -278,6 +278,7 @@ figcaption{
     }
 
 }
+
 
 @media screen and (max-width: 800px){
 
