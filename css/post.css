@@ -19,7 +19,13 @@
     font-size: 1.7rem;
     padding: 2rem;
     cursor: pointer;
+    transition: trasform 0.3s;
 }
+
+.sortby:hover .sort__icon{
+    transform: rotate(180deg);
+}
+
 .sort__icon{
     width: 20px;
     height: 15px;
@@ -36,13 +42,18 @@
 .ribbon{
     background-color: var(--clr-accent);
     position: absolute;
-    right: -1rem;
+    right: -2rem;
     top: 5rem;
     color: var(--clr-light);
     font-family: var(--ff-heading);
     padding: 1rem;
     border-radius: 10px;
 }
+
+.ribbon:hover{
+    background-color: var(--clr-dark);
+}
+
 
 .post__header--post{
     background-color: var(--clr-accent);
@@ -62,6 +73,10 @@
 
 h1{
     text-align: center;
+}
+
+.post__heading--post{
+    font-family: 'Noto Sans Mono', monospace;
 }
 
 .post__content--post{
@@ -123,6 +138,10 @@ figcaption{
     color: var(--clr-primary);
     font-family: var(--ff-body);
     font-weight: 900;
+    transition: transform 0.3s;
+}
+.avatar-text:hover {
+    transform: scale(1.1);
 }
 
 .avatar-name{

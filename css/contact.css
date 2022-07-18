@@ -13,6 +13,11 @@
 .contact-header{
 display:flex;
 justify-content: center;
+transition: transform 0.5s;
+}
+
+.contact-header:hover .icon-contact{
+    transform: rotate(-45deg);
 }
 
 .contact-heading{
