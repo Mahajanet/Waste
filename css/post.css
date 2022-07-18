@@ -6,6 +6,7 @@
     max-width: 100%;
     margin-inline: auto;
     padding: 10rem;
+    padding-top: 5rem;
     font-family: var(--ff-body);
 }
 

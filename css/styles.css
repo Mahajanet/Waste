@@ -1,9 +1,9 @@
-@import "navbar.css";
-@import "main.css";
-@import "about.css";
-@import "contact.css";
-@import "footer.css";
-@import "post.css";
+@import "../css/navbar.css";
+@import "../css/main.css";
+@import "../css/about.css";
+@import "../css/contact.css";
+@import "../css/footer.css";
+@import "../css/post.css";
 
 
 
@@ -69,7 +69,7 @@ picture {
 /* Web unsafe fonts */
 @font-face{
   font-family: "Type Machine";
-  src: url(../fonts/Type\ Machine.ttf);
+  src: url(../fonts/Type-Machine.ttf);
 }
 
 @font-face{
