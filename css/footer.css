@@ -8,14 +8,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: var(--ff-body);
+    color: #DCDBDB;
+    display: flex;
+    flex-direction: column;
 }
   
 .footer-text{
-    color: #DCDBDB;
     font-size: 2rem;
-    font-family: var(--ff-body);
+    margin-bottom: 2rem;
 }
-  
+
+.mentions{
+    font-size: 1.3rem;
+}
+
+.underline{
+    text-decoration: underline;
+}
   
 @media screen and (max-width:280px){
   

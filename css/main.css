@@ -1,0 +1,139 @@
+/* Main */
+
+
+.main{
+    background: url(../images/waarmmountains.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 100%;
+    margin-inline: auto;
+    padding: 4rem;
+    font-family: var(--ff-body);
+}
+
+
+/* Hero */
+
+
+.hero{
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+
+/*Post*/
+
+
+.post{
+  background-color: #DCDBDB;
+  font-family: 'Type Machine', monospace;
+  padding: 3rem;
+  color: #000000;
+  position: relative;
+  font-size: 1.5rem;
+  aspect-ratio: 1/0.5;
+}
+
+.post__header{
+  background-color: var(--clr-accent);
+  height: 2.2rem;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: #ffffff;
+  font-family: var(--ff-heading);
+}
+
+.post__header__content{
+  margin-left: 1rem;
+}
+
+.stacked{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.post__content{
+  margin: .5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post__title{
+  font-family: 'Noto Sans Mono', monospace;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+.post__author, .post__time{
+  font-weight: bold;
+  font-style: italic;
+}
+
+.post__text{
+  margin-top: 1rem;
+}
+
+.post__text::first-letter{
+  font-size: large;
+  font-weight: bold;
+}
+.post__text::after{
+  content: "...";
+}
+
+.post__footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.post__img{
+  width: 70%;
+  aspect-ratio: 1.5/1;
+  object-fit: cover;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: end;
+  top: 3px;
+  right: 0;
+  position: absolute;
+}
+
+
+@media screen and (min-width:1000px){
+
+  .post.featured{
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+  
+  
+  .featured .post__img{
+    aspect-ratio: 1/.5;
+  }
+}
+
+@media screen and (min-width:905px) and (max-width:1500px){
+
+  .focused{
+    display: none;
+  }
+
+
+  .third{
+  grid-row: 2/-2;
+  grid-column: 1/2;
+  }
+}
