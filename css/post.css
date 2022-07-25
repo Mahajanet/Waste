@@ -98,11 +98,15 @@ figure:nth-of-type(even){
     margin-left: 3rem;
 }
 
-figcaption{
+.post__image__info{
+    display: flex;
+}
+
+figcaption,
+blockquote{
     color: rgb(46, 46, 46);
     font-size: 1.3rem;
-    margin: 1rem;
-
+    margin: .2rem;
 }
 
 .post__info{
